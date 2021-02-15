@@ -14,7 +14,7 @@
     },
 
     async fetch() {
-      this.pages = await this.$content({ deep: true }).where({ nav: { $eq: true }}).fetch()
+      this.pages = await this.$content().where({ nav: { $eq: true }}).fetch()
     },
   }
 </script>
