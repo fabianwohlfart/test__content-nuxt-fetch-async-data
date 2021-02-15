@@ -1,7 +1,6 @@
 <template>
   <div>
     {{ payload.title }}
-    <Nav />
     <nuxt-link to='/'>Back</nuxt-link>
   </div>
 </template>
