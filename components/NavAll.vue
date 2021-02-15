@@ -19,12 +19,12 @@
 
     created () {
       /*
-      * I this component is not on a page which was initally loaded (not on page-b / _slug.vue)
+      * If this component is not on a page which was initally loaded (not on page-b / _slug.vue)
       * its not loaded properly when we navigate to it (index.vue)
       * Therefor we have to fetch it manually
       * Fetching manually loads the whole DB...
       */
-      this.$fetch()
+      // this.$fetch()
     }
   }
 </script>
