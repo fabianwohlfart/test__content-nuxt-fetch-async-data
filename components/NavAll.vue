@@ -14,7 +14,17 @@
     },
 
     async fetch() {
-      this.pages = await this.$content({ deep: true }).where({ nav: { $eq: true }}).fetch()
+      const pages = await this.$content().fetch()
+      this.pages = pages
     },
+
+    created () {
+      /*
+      * If this is not fetching on created()
+      * then it wont load,
+      * if this component is not on a page which was initally loaded
+      */
+      this.$fetch()
+    }
   }
 </script>
