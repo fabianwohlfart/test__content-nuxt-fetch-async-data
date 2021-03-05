@@ -1,5 +1,5 @@
 <template>
   <div class="container">
-    <NavAll />
+    <NuxtLink to="/start/">Go To Start</NuxtLink>
   </div>
 </template>
